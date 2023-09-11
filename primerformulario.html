@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primer formulario</title>
+</head>
+<body>
+    <h1>Formulario Basico</h1>
+    <form method="post" action="#" enctype="multipart/form-data">
+        <fieldset>
+            <legend>Datos personales</legend>
+            <label for="nombre">Nombre</label><br>
+            <input type="text" name="nombreUsuario" id="nombre" size="30" maxlength="15" minlength="5"/><br>
+            <label for="apellido">Apellido</label><br>
+            <input type="text" name="apellidoUsuario" id="apellido" size="30" maxlength="15" minlength="5"/><br>
+            <label>Sexo</label><br>
+            <input type="radio" name="sexo" value="femenino" id="fem" />
+            <label for="fem">Femenino</label><br>
+            <input type="radio" name="sexo" value="masculino" id="masc"/>
+            <label for="masc">Masculino</label><br>
+            <input type="radio" name="sexo" value="otro" id="otro" checked/>
+            <label for="otro">Otro</label><br>
+
+            <label>Edad</label><br>
+            <input type="radio" name="edad" value="menos16" id="menos16" checked/>
+            <label for="menos16">Menos de 16 años</label><br>
+            <input type="radio" name="edad" value="entre25y35" id="entre25y35"/>
+            <label for="entre25y35">Entre 25 y 35</label><br>
+            
+            <label for="esc">Escuela</label><br>
+            <input type="text" name="escuela" id="esc" readonly value="EPET 20" size="30"/> <br>
+
+            <label for="archivo">Incluir foto</label><br>
+            <input type="file" name="foto" id="archivos">
+        </fieldset>
+
+        <fieldset>
+            <legend>Iniciar sesión</legend>
+            <label for="email">Email</label><br>
+            <input type="email" name="emailUsuario" id="email" size="30"/><br>
+            <label for="contraseña">Contraseña</label><br>
+            <input type="password" name="contraseña" id="contra" required size="30"/> <br>
+        </fieldset>
+
+        <input type="checkbox" name="suscripción" value="suscripto" id="sus"/>
+        <label for="sus">Suscribirme a las novedades</label><br>
+
+        <input type="checkbox" name="acuerdos" value="acepta" id="acuerdo"/>
+        <label for="acuerdo">Acepto los terminos y condiciones</label><br>
+
+        <input type="submit" name="enviar" id="guardar"/>
+        <input type="reset" value="Borrar datos"/>
+    </form>
+
+</body>
+</html>
