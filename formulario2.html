@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form method="post" action="#" enctype="multipart/form-data">
+        <label for="nom">Username</label><br>
+        <input type="text" name="nombre" id="nom"><br>
+        <label for="contra">Password</label><br>
+        <input type="password" name="contraseña" id="contra"><br>
+        <label for="ciudad">City of</label><br>
+        <input type="text" name="ciudad" id="ciudad"><br>
+        <label for="empleo">Emplyment</label><br>
+        <input type="text" name="empleo" id="empleo"><br>
+
+        <select name="doctype" id="use">
+            <option value="auto">(detected automatically)</option>
+            <option value="html5">HTML:5</option>
+            <option value="xhtml">Xhtml</option>
+        </select><br>
+        <label>Please specify your role</label><br>
+        <input type="radio" name="rol" value="administrador" id="admin" checked>
+        <label for="admin">Admin</label><br>
+        <input type="radio" name="rol" value="ingeniero" id="inge" checked>
+        <label for="inge">Engineer</label><br>
+        <input type="radio" name="rol" value="manager" id="manager" checked>
+        <label for="manager">Manager</label><br>
+        <input type="radio" name="rol" value="invitado" id="invi" checked>
+        <label for="invi">Guest</label><br>
+
+        <input type="checkbox" name="Mail" value="mail" id="mail">
+        <label for="mail">Mail</label><br>
+        <input type="checkbox" name="payroll" value="payroll" id="payroll">
+        <label for="payroll">Payroll</label><br>
+        <input type="checkbox" name="self" value="servicio" id="self">
+        <label for="self">Self-service</label><br>
+
+        <input type="submit" name="enviar" value="Login" id="guardar">
+        <input type="reset" value="Reset">
+        <p>holaaa</p>
+    </form>
+</body>
+</html>
